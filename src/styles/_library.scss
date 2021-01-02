@@ -1,0 +1,17 @@
+.library {
+    position: fixed;
+    padding: 1rem;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: scroll;
+    box-shadow: 2px 2px 2px rgba($color: #c1bcbc, $alpha: 1.0);
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.active-library {
+    transform: translateX(0%);
+    opacity: 100%;
+}

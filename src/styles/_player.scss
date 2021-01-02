@@ -1,0 +1,72 @@
+.player {
+    height: 20vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-container {}
+
+.play-controle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    padding: 1rem;
+
+    svg {
+        cursor: pointer;
+    }
+
+}
+
+.time-controle {
+    display: flex;
+    align-items: center;
+    width: 70%;
+
+    input {
+        width: 100%;
+        cursor: pointer;
+        -webkit-appearance: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    input[type="range"]:focus {
+        outline: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 16px;
+        width: 16px;
+    }
+
+    .track {
+        position: relative;
+        width: 100%;
+        height: 1rem;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .animated-track {
+        position: absolute;
+        background: lightgrey;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transform: translateX(0%);
+        pointer-events: none;
+    }
+
+
+
+    p {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,21 @@
+.nav {
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    button {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        padding: 0.5rem;
+        border: 2px solid rgb(107, 102, 102);
+        transform: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: rgb(134, 149, 161);
+            color: white;
+        }
+    }
+
+}
